@@ -1,0 +1,39 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello SyntheseController!{% endblock %}
+
+{% block body %}
+    <h1>liste de syntheses</h1>
+    <section class = "article">
+        <article>
+            <h2> titre de la synthese </h2>
+                <div class = "metadata">ecrit le 10/10/2020</div>
+                <div class="container">
+                    <p> cours symfony n°1. Découverte symfony</p>
+                    <a href = "{{path("synthese_show")}}" class ="btn btn-primary">lire le detail</a>
+
+                </div>
+        </article>
+
+                    <h2> titre de la synthese </h2>
+                <div class = "metadata">ecrit le 10/10/2020</div>
+                <div class="container">
+                    <p> cours symfony n°1. Découverte symfony</p>
+                    <a href = "{{path("synthese_show")}}" class ="btn btn-primary">lire le detail</a>
+
+                </div>
+        </article>
+
+                    <h2> titre de la synthese </h2>
+                <div class = "metadata">ecrit le 10/10/2020</div>
+                <div class="container">
+                    <p> cours symfony n°1. Découverte symfony</p>
+                    <a href = "{{path("synthese_show")}}" class ="btn btn-primary">lire le detail</a>
+                    
+                </div>
+        </article>
+    </section>
+
+    
+
+{% endblock %}
