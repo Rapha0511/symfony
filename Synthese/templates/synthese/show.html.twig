@@ -1,12 +1,10 @@
 {% extends 'base.html.twig'%}
 {% block body %}
 <article>
-    <h2> Titre de la synthese</h2>
-    <div class="metadata">Ecrit le 10/10/2020</div>
+    <h2> {{ synthese.title }}</h2>
+    <div class="metadata">Ecrit le {{ synthese.creation | date('d/m/Y') }}</div>
     <p>
-        Découverte de symfony.
-        on a vu le language de rendu twig
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis deserunt est sequi laudantium ab aperiam nobis dolorum eos id. Velit sint quos amet. Facere nobis porro assumenda voluptate veniam aperiam?
+        {{ synthese.contenu }}
     </p>
 </article>
 {% endblock %}

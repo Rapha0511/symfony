@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+<h1>creation d'une nouvelle synthese</h1>
+
+{{form_start(formSynthese)}}
+
+{{form_row(formSynthese.title,{'label':'titre','attr':{'placeholder':"titre de la synthese"}})}}
+{{form_row(formSynthese.contenu,{'label':'Contenu'})}}
+{{form_row(formSynthese.descriptif,{'label':'Descriptif'})}}
+
+<button type="submit" class="btn btn-success">ajouter la synthese</button>
+
+
+{{form_end(formSynthese)}}
+
+    
+{% endblock  %}
